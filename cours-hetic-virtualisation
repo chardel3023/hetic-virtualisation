@@ -144,5 +144,73 @@ Quels sont les avantages de la virtualisation du stockage ?
     Gains d’efficacité – Le principal avantage réside dans l’accélération du stockage et dans une meilleure utilisation de la capacité. L’accès aux données et le traitement des données sont également plus stables. En outre, le stockage virtuel garantit une utilisation à 100 % et un faible risque de manque de capacité.
 
 • Concept de la virtualisation du poste de travail
+
+
+Qu’est-ce qu’un poste de travail virtuel ?
+
+Un poste de travail virtuel est une station de travail qui existe de façon virtuelle et à laquelle il est possible d’accéder depuis n’importe où via Internet. Le poste de travail virtuel possède une image d’un système d’exploitation qui est partagé par d’autres machines virtuelles sur un réseau central.
+Les postes de travail virtuels ont le vent en poupe
+
+Avec la généralisation du télétravail et du travail hybride, les entreprises se tournent de plus en plus vers les postes de travail virtuels pour prendre en charge leurs effectifs dispersés. Les services informatiques ont mis en place des environnements de bureau virtuel comptant des dizaines, des centaines ou des milliers de postes de travail virtuels en service.
+Solutions, produits ou services HPE connexes
+
+HPE GreenLake pour la VDI
+
+Solutions VDI
+
+Solutions de stockage VDI pour la virtualisation client
+La gestion centralisée est un gage de sécurité
+
+Ces postes de travail virtuels reçoivent une image d’un système d’exploitation, ce qui leur permet de fonctionner au moyen d’un système hébergé et partagé ailleurs dans un datacenter. Et comme le datacenter est physiquement hébergé dans un endroit différent et géré de manière centralisée, les postes de travail virtuels sont plus sécurisés qu’un bureau physique, dans lequel de nombreux ordinateurs doivent être gérés séparément.
+Rubriques connexes
+
+Virtualisation de serveurs
+
+VDI
+
+Virtualisation
+
+Machine virtuelle (VM)
+Quels sont les différents types de postes de travail virtuels ?
+
+La virtualisation des postes de travail peut être réalisée de cinq façons différentes. Chaque méthode ayant ses forces et ses faiblesses, il convient d’étudier soigneusement chaque cas d’utilisation individuel pour garantir une virtualisation réussie.
+
+    Provisionnement du système d’exploitation : Le système d’exploitation est envoyé soit à une machine virtuelle déployée dans le datacenter, soit à une machine réelle sur un poste de travail physique. Dans les deux cas, une connexion constante au datacenter est nécessaire. L’utilisation d’un ordinateur portable n’est donc pas recommandée et les ordinateurs de bureau physiques peuvent nécessiter une importante prise en charge matérielle.
+    Protocole Remote Desktop Services (RDS) : La virtualisation est réalisée dans un datacenter, libérant ainsi des ressources pour le client. Dans ce cas, une seule instance d’une application ou d’un système d’exploitation est hébergée sur un serveur partagé. Cela fait du RDS une solution assez économique.
+    Hyperviseurs clients : Lorsqu’un client dispose d’un hyperviseur directement sur un ordinateur de bureau, cela permet d’exécuter plusieurs machines virtuelles à la fois. Bien que le matériel local soit généralement plus performant que tout ce qui est hébergé sur un serveur de données, il est peu probable que l’hyperviseur du client dispose du matériel nécessaire pour le prendre en charge. Cela signifie que la machine virtuelle ne fonctionnera probablement pas sur ce matériel.
+    Postes de travail virtuels hébergés côté client : Les machines virtuelles sont positionnées de manière à fonctionner au-dessus du système d’exploitation, ce qui permet d’y accéder partout et à tout moment. Cela signifie qu’il y a fondamentalement deux systèmes d’exploitation en jeu ici, ce qui augmente les chances que les machines virtuelles fonctionnent. Cependant, l’utilisation de cette méthode nécessite souvent d’importants efforts de formation et d’acceptation de la part de l’administrateur système.
+    Virtualisation des applications : Les applications sont isolées du système d’exploitation de l’utilisateur et fonctionnent de manière totalement indépendante. Cette séparation permet à une variété d’applications de fonctionner en même temps sur la même plateforme sans interférer les unes avec les autres. En utilisant un conteneur pour fournir le « panier » d’applications, les administrateurs peuvent gérer plus efficacement le pool d’applications.
+
+Quels avantages offrent les postes de travail virtuels ?
+
+Intrinsèquement flexibles et conviviaux, les postes de travail virtuels offrent de nombreux avantages.
+
+    Sécurité : Avantage considérable pour les entreprises, chaque dispositif est isolé des données sensibles et des ressources propriétaires, de sorte que ni les unes ni les autres ne sont compromises en cas de perte ou de vol.
+    Gestion : Comme les postes de travail virtuels sont gérés de manière centralisée, ils peuvent faire l’objet d’opérations de mise à jour et de maintenance rapides sur tous les sites éloignés.
+    Flexibilité : Les administrateurs peuvent rapidement allouer et configurer des postes de travail virtuels, ce qui évite d’avoir à provisionner des dispositifs physiques qui ne seront peut-être pas nécessaires pendant longtemps.
+    Coût : Avec des besoins minimes en maintenance et en équipement physique, les postes de travail virtuels offrent un net avantage en termes de coût.
+    Puissance de calcul : La puissance réelle qui fait fonctionner les postes de travail virtuels provient du centre de contrôle des données, qui est beaucoup plus puissant que les clients « légers » généralement utilisés.
+    Productivité : Certaines études indiquent que le télétravail peut augmenter l’efficacité des employés et donc leur productivité.
+    Reprise : Un autre avantage majeur de l’isolation des terminaux par rapport aux données et applications tient au fait que toutes ces ressources sont stockées de manière centralisée et sauvegardées régulièrement.
+
+Quelle est la différence entre un poste de travail virtuel et une machine virtuelle ?
+
+Quelques différences simples distinguent un poste de travail virtuel d’une machine virtuelle.
+
+Tout d’abord, une machine virtuelle (VM) n’est ni plus ni moins qu’un fichier imitant le fonctionnement d’un ordinateur physique. Une VM possède son propre processeur, son propre stockage, sa propre mémoire et sa propre interface réseau, de sorte qu’elle fonctionne comme « un ordinateur dans un ordinateur ». Cependant, une VM a toujours besoin de matériel physique, comme un hyperviseur, un disque dur RAM et une interface réseau. Néanmoins, une VM utilise le système d’exploitation tout comme une machine physique, ce qui fait que l’expérience utilisateur est presque identique. En outre, comme le système d’exploitation reste séparé, une VM peut exécuter simultanément des applications et des processus qui, autrement, interféreraient les uns avec les autres.
+
+Un poste de travail virtuel est créé par des machines virtuelles. Il reproduit la convivialité d’un ordinateur physique sans toutes les structures que possède même une machine virtuelle (processeur, stockage, mémoire, etc.). Il reprend tous les éléments d’un espace de travail physique et les stocke sur un serveur. Ainsi, l’expérience d’utilisation d’un poste de travail virtuel est essentiellement la même que celle d’un ordinateur physique.
+Comment les postes de travail virtuels améliorent-ils les processus de travail ?
+
+À l’heure où les entreprises s’empressent de développer leurs espaces de travail virtuels, vous pouvez tirer des enseignements des applications suivantes, quel que soit le secteur d’activité de votre entreprise :
+
+Éducation : Confrontée à une demande d’élargissement de son offre d’enseignement virtuel, l’Universidad Americana au Paraguay a déployé une nouvelle infrastructure composable pour améliorer son agilité informatique. Grâce à ce changement, l’université a pu répondre rapidement aux demandes des étudiants, réduire les coûts informatiques et améliorer l’expérience utilisateur. Le recours à l’automatisation a permis à l’équipe informatique de fournir rapidement des serveurs et des postes de travail virtuels aux étudiants, et de consacrer le temps ainsi libéré à l’innovation plutôt qu’à l’administration informatique.
+
+Construction : Lorsqu’un grand détaillant a décidé de réaménager ses magasins, plutôt que d’envoyer un collaborateur inspecter le travail en cours, il a utilisé la réalité augmentée pour permettre à ce collaborateur de visualiser l’espace physique à distance. La RA a permis aux collaborateurs travaillant sur le projet de se promener dans le magasin afin d’inspecter le site d’un point de vue réaliste, en 3D. Grâce à cela, le détaillant a pu éviter la plupart des déplacements qui auraient autrement été nécessaires pour les multiples inspections.
+
+Télémédecine : L’utilisation de solutions virtuelles permet d’étendre le rayon d’action des équipes soignantes et de procurer aux patients des soins plus sûrs et plus immédiats, au moment et de la manière dont ils en ont besoin. Le fait de travailler dans des environnements virtuels permet au personnel d’assurer la sécurité des dossiers des patients ainsi que de mobiliser et de protéger les fichiers d’imagerie médicale. Un environnement virtuel offre la rapidité et la précision nécessaires pour améliorer les résultats médicaux et les expériences cliniques, et même pour individualiser les soins dans les cas les plus complexes.
+
+Maintenance d’installations : Les postes de travail virtuels sont même adaptés à la réparation et à la maintenance des équipements sur site. Par exemple, lorsqu’un employé d’un site doit réparer ou entretenir un équipement qui ne lui est pas familier, il peut contacter un technicien plus compétent sur un lieu de travail distant. Il suffit à l’employé d’enfiler un casque et de se laisser guider dans l’opération comme si l’expert travaillait physiquement à ses côtés. L’intervenant distant peut voir ce que voit l’employé sur place et guider celui-ci de manière appropriée. Il peut également dessiner des cercles autour des objets présents dans le champ visuel, ou saisir du texte dans ce dernier pour aider le collaborateur sur place à se concentrer sur les pièces à manipuler. 
+
 • Concept de la virtualisation applicative
 • 1 TP sur l'installation et la configuration d'un environnement de virtualisation (Virtualbox, Esx, ...)
