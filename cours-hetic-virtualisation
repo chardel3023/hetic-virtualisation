@@ -288,4 +288,131 @@ Services publics : Les compagnies d’énergie doivent constamment opérer à gr
 Éducation : Face à l’augmentation considérable de la demande d’enseignement à distance, beaucoup de grands systèmes scolaires ont eu du mal à prendre en charge simultanément un nombre suffisant de postes de travail d’étudiants. En mettant en œuvre une configuration VDI moderne, les établissements scolaires peuvent considérablement augmenter le stockage, la capacité des serveurs et la disponibilité des applications afin que les étudiants puissent utiliser les applications Web de CAO/FAO en technologie flash et les suites d’animation 3D nécessaires à un apprentissage à distance efficace.
 
 • Concept de la virtualisation applicative
+
+Un conteneur Linux, qu'est-ce que c'est ?
+Publié 11 mai 2022 •
+%t minutes (temps de lecture)
+Copier l'URL
+
+Comment migrer depuis CentOS Linux vers un système d'exploitation conçu pour le cloud ?
+
+Pour réussir une migration depuis CentOS Linux vers un système d'exploitation conçu pour le cloud, le choix d’un SE qui corresponde à vos objectifs cloud et adapté à la production est crucial pour la standardisation.
+Découvrir la solution
+
+Conteneur Linux : définition
+
+En informatique, un conteneur Linux® est un processus ou un ensemble de processus isolés du reste du système. Tous les fichiers nécessaires à leur exécution sont fournis par une image distincte, ce qui signifie que les conteneurs Linux sont portables et fonctionnent de la même manière dans les environnements de développement, de test et de production. Ainsi, ils sont bien plus rapides à utiliser que les pipelines de développement qui s'appuient sur la réplication d'environnements de test traditionnels. En raison de leur popularité et de leur facilité d'utilisation, les conteneurs constituent également un élément essentiel de la sécurité informatique.
+Commencer à utiliser gratuitement des conteneurs Linux
+Pourquoi utiliser des conteneurs Linux ?
+
+Imaginons que vous développez une application. Vous travaillez sur un ordinateur portable dont l'environnement présente une configuration spécifique. D'autres développeurs peuvent travailler sur des machines qui présentent des configurations légèrement différentes. L'application que vous développez s'appuie sur cette configuration et utilise des bibliothèques, des dépendances et des fichiers spécifiques. En parallèle, votre entreprise exploite des environnements de développement et de production qui sont standardisés sur la base de configurations qui leur sont propres et de l'ensemble des fichiers associés. Vous souhaitez émuler ces environnements autant que possible localement, mais sans avoir à payer les coûts liés à la recréation des environnements de serveur. Comment faire pour que votre application en développement puisse fonctionner dans ces environnements, passer l'assurance qualité et être déployée sans prise de tête, sans réécriture et sans correctifs ? La réponse est simple : il vous suffit d'utiliser des conteneurs.
+What is a container
+
+Le conteneur qui accueille votre application contient l'ensemble des fichiers, des bibliothèques et des dépendances nécessaires. Vous pouvez ainsi le déplacer jusqu'en production sans aucun effet secondaire. Les éléments qui composent l'image d'un conteneur, créés à l'aide d'un outil Open Source comme Buildah, sont analogues à ceux de l'installation d'une distribution Linux, car cette image est fournie avec tous ses paquets RPM, fichiers de configuration, etc. Cependant, il est bien plus simple de distribuer des images de conteneurs que d'installer une nouvelle version d'un système d'exploitation. La crise est évitée, le travail peut continuer.
+
+C'est un exemple simplifié, mais les conteneurs Linux peuvent aussi être utilisés pour résoudre de nombreux problèmes liés à des situations qui nécessitent portabilité, configurabilité et isolation. Les conteneurs Linux permettent de développer plus rapidement des applications et de répondre aux besoins métier dès leur émergence. Dans certains cas, tels que la diffusion de données en temps réel avec Apache Kafka, les conteneurs sont essentiels parce qu'ils constituent le seul moyen de fournir l'évolutivité nécessaire aux applications. Quelle que soit l'infrastructure (sur site, dans le cloud ou hybride), les conteneurs répondent à la demande. Bien sûr, le choix de la plateforme de conteneurs est aussi important que les conteneurs eux-mêmes.
+
+La solution Red Hat® OpenShift® offre tout ce dont vous avez besoin pour le cloud hybride et les conteneurs d'entreprise, mais également pour le développement et les déploiements Kubernetes.
+Distribuer des applications conteneurisées avec Red Hat OpenShift
+Conteneurs et virtualisation : quelles sont les différences
+
+Ce n'est pas tout à fait la même chose. Les conteneurs et la virtualisation sont plutôt complémentaires. Voici deux définitions simples pour y voir plus clair :
+
+    La virtualisation permet à vos systèmes d'exploitation (Windows ou Linux) de s'exécuter simultanément sur un seul système matériel.
+    Les conteneurs partagent le même noyau de système d'exploitation et isolent les processus de l'application du reste du système. Par exemple : les systèmes Linux ARM exécutent des conteneurs Linux ARM, les systèmes Linux x86 exécutent des conteneurs Linux x86 et les systèmes Windows x86 exécutent des conteneurs Windows x86. Les conteneurs Linux sont extrêmement portables, mais ils doivent être compatibles avec le système sous-jacent.
+
+virtualization vs containers
+
+Qu'est-ce que cela signifie ? En premier lieu, la virtualisation utilise un hyperviseur pour émuler le matériel, ce qui permet d'exécuter plusieurs systèmes d'exploitation en parallèle. C'est une solution moins légère que les conteneurs. Lorsque vous disposez de ressources limitées, aux fonctionnalités limitées, il est nécessaire que vos applications soient légères et puissent être déployées de manière dense. Les conteneurs Linux s'exécutent en natif sur leur système d'exploitation, qu'ils partagent entre eux. Vos applications et services restent ainsi légers et s'exécutent rapidement en parallèle.
+
+Les conteneurs Linux représentent une nouvelle évolution de la manière selon laquelle nous développons, déployons et gérons des applications. Les images de conteneurs Linux permettent d'assurer la portabilité et le contrôle des versions des applications. Les développeurs ont ainsi la garantie que ce qui fonctionne sur leur ordinateur portable fonctionnera aussi dans l'environnement de production. Un type spécial d'image de conteneur appelé image d'or crée une référence fiable et cohérente pour la configuration du système. Un conteneur Linux mobilise moins de ressources qu'une machine virtuelle. Il propose une interface standard (démarrage, arrêt, variables d'environnement, etc.), assure l'isolation des applications et peut être géré plus facilement en tant que module d'une application plus importante (plusieurs conteneurs). En outre, ces applications à plusieurs conteneurs peuvent être orchestrées dans différents clouds.
+
+Il existe même des outils qui associent l'orchestration de conteneurs et la gestion de machines virtuelles. Pour plus d'informations, regardez cet extrait du Red Hat Summit 2020 qui comporte une session thématique sur ce type d'outils.
+En savoir plus sur la virtualisation
+LXC, qu'est-ce que c'est ?
+
+Le projet Linux Containers (LXC) est une plateforme de conteneurs Open Source qui fournit un ensemble d'outils, de modèles, de bibliothèques et de liaisons de langage. Le projet LXC dispose d'une interface en ligne de commande simple qui facilite la prise en main pour les nouveaux utilisateurs.
+
+Il contient un environnement de virtualisation au niveau du système d'exploitation qu'il est possible d'installer sur de nombreux systèmes basés sur Linux. Vous pouvez peut-être y accéder dans le référentiel du package de votre distribution Linux.
+Petite histoire des conteneurs
+
+La technologie que nous appelons aujourd'hui « conteneurs » est apparue en 2000 sous le nom de FreeBSD Jails et permettait à l'époque de partitionner un système FreeBSD en plusieurs sous-systèmes ou « jails » (prisons, en français). Les systèmes jails étaient développés comme des environnements sécurisés qu'un administrateur système pouvait partager avec plusieurs utilisateurs opérant à l'intérieur ou à l'extérieur d'une entreprise.
+
+En 2001, Jacques Gélinas a créé le projet VServer, rendant possible la mise en œuvre d'un environnement isolé sur un serveur Linux. Une fois cette base posée pour l'exploitation de plusieurs espaces utilisateurs contrôlés, toutes les pièces se sont mises en place pour former les conteneurs Linux que l'on connaît aujourd'hui.
+
+Très rapidement, d'autres technologies se sont greffées aux conteneurs pour concrétiser cette approche de l'isolement. La fonction du noyau cGroups (groupes de contrôle) permet de contrôler et de limiter l'utilisation des ressources pour un processus ou un groupe de processus. Le système d'initialisation systemd permet de définir l'espace utilisateur et de gérer les processus associés. Il est utilisé par la fonction cgroups pour améliorer le contrôle sur ces processus isolés. Ces deux technologies, qui permettent de mieux contrôler Linux, ont servi de base pour pouvoir exécuter des environnements bien qu'ils soient séparés.
+L'avènement de Docker
+
+En 2008, la technologie de conteneurs Docker a fait son apparition (via dotCloud). Cette technologie a apporté de nombreux nouveaux concepts et outils : une interface en ligne de commande simple pour l'exécution et la création de nouvelles images à couches, un démon de serveur, une bibliothèque d'images de conteneurs prédéfinies et le principe d'un serveur de registre. Ensemble, toutes ces technologies ont permis aux utilisateurs de créer rapidement de nouveaux conteneurs à couches et de les partager facilement entre eux.
+
+Trois normes majeures assurent l'interopérabilité des technologies de conteneurs : les spécifications OCI Image, Distribution et Runtime. Ensemble, ces spécifications permettent aux projets communautaires, aux produits commerciaux et aux fournisseurs de cloud de développer des technologies de conteneurs interopérables (qui vous permettent, par exemple, de faire fonctionner vos images créées sur mesure sur le serveur de registre d'un fournisseur de cloud). Aujourd'hui, Red Hat et Docker font partie des nombreux membres de l'Open Container Initiative (OCI) et contribuent à la création de normes ouvertes pour les technologies de conteneurs à l'échelle du secteur.
 • 1 TP sur l'installation et la configuration d'un environnement de virtualisation (Virtualbox, Esx, ...)
+
+Docker, qu'est-ce que c'est ?
+Mis à jour 11 janvier 2023 •
+%t minutes (temps de lecture)
+Copier l'URL
+Docker : définition
+
+Docker désigne plusieurs éléments, à savoir un projet d'une communauté Open Source, les outils issus de ce projet Open Source, l'entreprise Docker Inc. qui constitue le principal soutien de ce projet, ainsi que les outils que l'entreprise prend officiellement en charge. Le fait que ce terme soit utilisé aussi bien pour désigner les technologies que l'entreprise peut prêter à confusion.
+
+Voici les différentes définitions :
+
+    Le logiciel Docker est une technologie de conteneurisation qui permet la création et l'utilisation de conteneurs Linux®.
+    La communauté Open Source Docker a pour but d'améliorer ces technologies en faveur des utilisateurs.
+    L'entreprise Docker Inc. s'appuie sur le travail de la communauté Docker pour développer ses produits. En échange, elle y contribue en renforçant la sécurité et en partageant ses avancées. Elle assure ensuite la prise en charge des technologies optimisées et renforcées pour les entreprises clientes.
+
+Grâce à Docker, les conteneurs deviennent des machines virtuelles très légères et modulaires qui vous offrent une grande flexibilité pour créer, déployer, copier des conteneurs et les déplacer d'un environnement à un autre. Vos applications sont ainsi optimisées pour le cloud.
+EssayerGérer des conteneurs Docker
+Docker et conteneurs Linux : quelle est la différence ?
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+Même s'ils sont souvent confondus, Docker et les conteneurs Linux traditionnels sont deux choses bien différentes. À l'origine, la technologie Docker s'appuyait sur la technologie LXC (que beaucoup associent aux conteneurs Linux traditionnels), mais ce n'est plus le cas aujourd'hui. En effet, si LXC offrait une certaine légèreté en matière de virtualisation, elle présentait toutefois des lacunes dans l'expérience de développement et d'utilisation. La technologie Docker permet non seulement de gérer des conteneurs, mais aussi de faciliter leur création et leur conception, ainsi que de distribuer et de contrôler la version des images, entre autres.
+
+Les conteneurs Linux traditionnels utilisent un système d'initialisation capable de gérer plusieurs processus, ce qui permet à plusieurs applications de s'exécuter comme une seule et unique application. La technologie Docker privilégie la division des applications en processus et fournit les outils pour le faire. Cette approche granulaire présente plusieurs avantages.
+Avantages des conteneurs Docker
+Modularité
+
+Avec Docker, il est possible de séparer un élément d'une l'application afin de le modifier ou de le réparer sans arrêter toute l'application. En plus de cette approche basée sur les microservices, vous pouvez partager des processus entre différentes applications, de la même manière que dans une architecture orientée services (SOA).
+Couches et contrôle de version des images
+
+Chaque image Docker se compose de plusieurs séries de couches regroupées dans une seule image. Une nouvelle couche est créée à chaque modification de l'image ou lorsqu'un utilisateur exécute une commande telle que run ou copy.
+
+Docker réutilise ces couches pour construire de nouveaux conteneurs, ce qui permet d'accélérer le processus de création. Les modifications intermédiaires sont partagées entre les images pour améliorer la vitesse, la taille et l'efficacité. Élément indissociable des couches, le contrôle de version permet d'obtenir un journal qui consigne toutes les modifications et vous offre ainsi un contrôle total sur vos images de conteneur.
+Restauration
+
+La restauration est sans doute l'un des plus grands avantages des couches. Puisque chaque image est composée de couches, si l'itération actuelle d'une image ne vous plaît pas, vous pouvez restaurer la version précédente. Cette fonction favorise le développement agile et vous aide à mettre en œuvre les pratiques d'intégration et de déploiement continus (CI/CD) au niveau des outils.
+Déploiement rapide
+
+Autrefois, l'installation, la mise en marche, le provisionnement et la mise à disposition du matériel prenaient plusieurs jours et impliquaient des efforts et des dépenses importants. Avec les conteneurs Doker, le déploiement s'effectue en quelques secondes seulement. En créant un conteneur pour chaque processus, vous pouvez partager rapidement tous vos processus avec les nouvelles applications. De plus, vous n'avez plus besoin de démarrer un système d'exploitation pour ajouter ou déplacer un conteneur, ce qui réduit considérablement le délai de déploiement. Ainsi, vous pouvez créer et éliminer les données de vos conteneurs facilement, à moindre coût, et sans inquiétude.
+
+La technologie Docker propose donc une approche davantage tournée vers la granularité, le contrôle et les microservices, qui met l'accent sur l'efficacité.
+
+Création d'applications conteneurisées : 5 éléments à partager avec votre hiérarchie
+Quelles sont les limites de la technologie Docker ?
+
+Docker est capable de gérer des conteneurs uniques à lui seul. Plus vous utilisez de conteneurs et d'applications conteneurisées et fragmentées, plus la gestion et l'orchestration deviennent complexes. Au bout d'un moment, il est nécessaire de regrouper les conteneurs afin de fournir les services (réseau, sécurité, télémétrie, etc.) sur la totalité d'entre eux. C'est précisément à ce niveau qu'intervient la technologie Kubernetes.
+Top 10 des faits que tous les spécialistes du Cloud devraient absolument connaître sur Kubernetes et les conteneurs
+
+ 
+
+La technologie Docker ne fournit pas les mêmes fonctionnalités UNIX que les conteneurs Linux traditionnels, notamment la possibilité d'utiliser des processus tels que cron ou syslog dans le conteneur, en parallèle à l'application. Elle ne permet pas non plus le nettoyage des processus petits-enfants une fois le processus enfant terminé. Pour remédier à ces lacunes, vous pouvez modifier le fichier de configuration et y ajouter ces fonctionnalités, mais cela n'est pas toujours évident au premier abord.
+
+De plus, certains sous-systèmes et appareils Linux ne présentent pas d'espaces de noms. Il s'agit entre autres de SELinux, de Cgroups et d'autres appareils /dev/sd*. Cela signifie que si un pirate prenait le contrôle de ces sous-systèmes, l'hôte serait compromis. Afin de préserver sa légèreté, le noyau de l'hôte est partagé avec les conteneurs, ce qui ouvre une brèche de sécurité. Ce n'est pas le cas avec les machines virtuelles, car elles sont bien mieux isolées du système hôte.
+Les conteneurs Docker sont-ils vraiment sûrs ?
+
+ 
+
+Par ailleurs, le démon Docker peut également poser des problèmes de sécurité. En effet, pour utiliser et exécuter des conteneurs Docker, vous devrez probablement utiliser le démon Docker, un environnement d'exécution persistant pour les conteneurs. Celui-ci nécessite des privilèges root, il est donc important de surveiller l'accès à ces processus et de bien choisir leur emplacement. Par exemple, un démon local présente une surface d'attaque plus petite qu'un démon hébergé dans un emplacement public tel qu'un serveur web.
+
