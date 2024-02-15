@@ -22,6 +22,45 @@ Savoirs associés
 
 • Historique de la Virtualisation (UC et Stockage)
 • La virtualisation des réseaux (Services réseaux virtualisés - VPN)
+
+
+Virtualisation de réseau
+Qu’est-ce que la virtualisation de réseau (NV) ?
+
+ 
+
+La virtualisation de réseau (NV) désigne l’abstraction sous forme logicielle des ressources réseau traditionnellement fournies sous forme matérielle. La virtualisation de réseau peut combiner plusieurs réseaux physiques en un réseau logiciel virtuel, ou encore diviser un réseau physique en plusieurs réseaux virtuels indépendants et distincts.
+
+ 
+Pourquoi la virtualisation de réseau ?
+
+La virtualisation de réseau découple les services réseau du matériel sous-jacent et permet d’effectuer le provisionnement virtuel de tout un réseau. Les ressources du réseau physique, telles que les commutateurs et les routeurs, sont regroupées et accessibles par n’importe quel utilisateur par l’intermédiaire d’un système de gestion centralisé. La virtualisation de réseau permet également de procéder à l’automatisation de nombre de tâches administratives, ce qui réduit ainsi le nombre d’erreurs manuelles et le délai de provisionnement. Elle renforce la productivité et l’efficacité du réseau.
+virtualisation de réseau vmware pour les nuls
+Rubriques connexes
+
+    Virtualisation des fonctions réseau (Network Functions Virtualization, NFV)
+    Micro-segmentation
+    Virtualisation des serveurs
+
+Exemple de virtualisation de réseau
+
+Les LAN virtuels (VLAN) sont un exemple de virtualisation de réseau. Un VLAN est une sous-section d’un réseau local (LAN) créée avec un logiciel qui combine les terminaux du réseau en un groupe, quel que soit leur emplacement physique. Les VLAN améliorent la vitesse et les performances des réseaux surchargés et simplifient les opérations de modification ou d’ajout effectuées sur le réseau.
+
+ 
+Types de virtualisation de réseau
+
+La virtualisation de réseau peut être de type externe ou interne. La virtualisation externe combine plusieurs réseaux ou parties de réseau en une unité virtuelle. La virtualisation interne utilise des conteneurs logiciels pour reproduire ou fournir la fonctionnalité d’un réseau physique unique.
+
+ 
+Virtualisation de réseau NSX
+
+VMware NSX Data Center est une plate-forme de virtualisation de réseau qui fournit l’intégralité des fonctions réseau et de sécurité sous forme logicielle et qui est isolée de l’infrastructure physique sous-jacente. NSX utilise des logiciels pour fournir des fonctions réseau telles que les pare-feu, la commutation et le routage. Autrement dit, plusieurs utilisateurs peuvent partager le même environnement physique en utilisant des réseaux virtuels invisibles les uns pour les autres pour accroître l’efficacité et la sécurité.
+
+ 
+Logiciel de virtualisation de réseau
+
+Un logiciel de virtualisation de réseau permet aux administrateurs réseau de déplacer des machines virtuelles à l’échelle de différents domaines sans avoir à reconfigurer le réseau. Le logiciel crée une superposition de réseau qui peut exécuter des couches de réseau virtuel séparées par-dessus un même réseau physique.
+
 • La virtualisation des serveurs
 • La virtualisation du stockage
 • Concept de la virtualisation du poste de travail
