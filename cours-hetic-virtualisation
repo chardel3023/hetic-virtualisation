@@ -63,6 +63,86 @@ Un logiciel de virtualisation de réseau permet aux administrateurs réseau de d
 
 • La virtualisation des serveurs
 • La virtualisation du stockage
+
+
+Qu’est-ce que la virtualisation du stockage et à quoi sert-elle ?
+
+Dans le monde du stockage d’entreprise, la virtualisation du stockage est une technique qui permet de mettre en commun des dispositifs de stockage physiques de manière à ce que le département informatique n’ait qu’un seul dispositif de stockage « virtuel » à gérer. Bien qu’aujourd’hui largement éclipsée par le modèle cloud, la virtualisation du stockage offrait des avantages opérationnels et économiques considérables par rapport au stockage bare metal (dans lequel les dispositifs de stockage physiques sont exploités directement). La virtualisation du stockage permet aux entreprises de réduire les problèmes de compatibilité ainsi que d’améliorer les performances et la sécurité des environnements de stockage.
+En utilisant le stockage virtualisé, les administrateurs ont dû tenir compte d’un certain nombre de problèmes :
+
+    Compatibilité et interopérabilité – Les environnements de virtualisation du stockage doivent être compatibles avec l’infrastructure matérielle sous-jacente, les composants réseau, les serveurs, les systèmes d’exploitation, les outils de gestion et les hyperviseurs. Il est essentiel de garantir une compatibilité avec des protocoles comme NFS et Fibre Channel pour assurer une intégration fluide, ainsi qu’avec les API offrant l’interopérabilité avec les outils d’automatisation qui assurent l’orchestration et l’intégration. 
+    Performances et latence – Les applications critiques ont des exigences de performances qui doivent être satisfaites par l’environnement de stockage virtualisé. Les administrateurs doivent évaluer les capacités des contrôleurs de stockage, la bande passante du réseau, la capacité d’I/O des disques et les mécanismes de mise en cache pour comprendre leur effet sur les performances et la latence.
+    Sécurité et intégrité des données – Un environnement de stockage virtualisé doit prendre en charge le chiffrement des données afin de garantir leur sécurité pendant le transit ou au repos et de fournir des contrôles d’accès et d’authentification à des niveaux granulaires pour prévenir le piratage. De robustes solutions de sauvegarde et de reprise après sinistre sont nécessaires pour assurer la protection des données dans le cadre du stockage virtualisé.
+
+Solutions, produits ou services HPE connexes
+
+Infrastructure hyperconvergée
+
+Stockage pour la virtualisation de serveurs
+Sujets connexes
+
+Virtualisation de serveurs
+
+Bureaux virtuels
+
+Virtualisation
+Comment la virtualisation du stockage s’inscrit-elle dans le modèle de stockage cloud ?
+
+La technique de virtualisation du stockage existe depuis des décennies et a ouvert la voie au stockage cloud (qui permet de virtualiser des quantités massives de dispositifs de stockage individuels en d’énormes pools de stockage virtuel). Ces dernières années, la virtualisation du stockage a largement cédé la place au modèle de stockage cloud, les départements informatiques des entreprises ayant compris qu’il était dans leur intérêt de laisser les fournisseurs de services cloud résoudre les problématiques de déploiement et de gestion du stockage virtualisé mentionnées plus haut.
+
+Avec le modèle du cloud computing, les administrateurs de machines virtuelles et d’applications n’ont qu’à renseigner quelques paramètres pour spécifier le stockage dont ils ont besoin – type de stockage (bloc, fichier, objet), capacité, performances et bande passante –, et le fournisseur de services cloud met immédiatement à disposition le stockage souhaité à partir de ses propres pools virtualisés. En arrière-plan, l’architecture cloud prend en charge toutes les tâches de provisionnement, de configuration et de protection qui étaient auparavant réalisées en datacenter par un administrateur.
+
+Les avantages opérationnels du modèle cloud sont évidents : les services informatiques de l’entreprise n’ont plus à se préoccuper de la gestion d’environnements de stockage virtualisés de plus en plus complexes, et les différentes divisions profitent de délais de provisionnement nettement raccourcis. Le stockage cloud permet un accès à la demande aux ressources de stockage et simplifie considérablement les processus de gestion des données. Cela permet d’accélérer la création de valeur et la transformation digitale.
+
+D’un point de vue financier, le modèle cloud offre aux entreprises un choix et une flexibilité accrus en matière de consommation des ressources de stockage. En règle générale, les fournisseurs de services cloud proposent une facturation de type OpEx en paiement à l’utilisation pour la consommation de stockage cloud. Cependant, les offres les plus avancées intègrent depuis peu une option de type CapEx, qui permet aux entreprises de combiner la souveraineté des données et les avantages sécuritaires du stockage sur site avec une expérience opérationnelle cloud.
+Comment fonctionne la virtualisation du stockage ?
+
+Avec la virtualisation du stockage,le matériel de stockage physique est mis en miroir dans un volume virtuel. Pour construire un environnement de stockage virtuel simple, plusieurs disques physiques sont combinés en un groupe sur un seul serveur. Les blocs de stockage virtuels ou logiques sont affectés au même serveur et permettent de rediriger le trafic d’entrée/sortie (I/O).
+
+Les disques physiques sont séparés du volume virtuel par une couche de virtualisation qui permet aux systèmes d’exploitation et aux applications d’accéder au stockage et de l’utiliser. Le logiciel de stockage virtuel prend en charge les demandes d’I/O et les envoie aux dispositifs de stockage appropriés dans le pool global de stockage.
+
+Les disques physiques sont eux-mêmes divisés en petits blocs de données, ou objets appelés numéros d’unités logiques (LUN), volumes logiques ou groupes RAID. Ces blocs sont présentés aux serveurs à distance sous la forme d’un disque virtuel. Du point de vue du serveur, ils ressemblent à un disque physique plutôt qu’à l’ensemble des dispositifs de stockage qui constituent le pool global de stockage dans l’environnement virtualisé.
+
+Dans un environnement plus complexe, les baies RAID peuvent fonctionner comme un stockage virtuel. Dans ce cas, plusieurs disques physiques imitent un dispositif de stockage unique qui répartit et réplique les données sur plusieurs disques en arrière-plan. Ce processus améliore les performances d’I/O et protège les données de la défaillance d’un seul disque.
+
+Le mode d’accès aux données des disques physiques implique une étape supplémentaire pour le logiciel de virtualisation. En plus de créer une séparation entre les dispositifs de stockage physiques et virtuels, le logiciel de virtualisation crée une carte à l’aide de métadonnées pour localiser rapidement les données stockées. Dans certains cas, le logiciel crée un algorithme pour trouver les données encore plus rapidement.
+
+La création d’un stockage virtuel peut être réalisée dans des environnements de stockage de bloc aussi bien que de stockage de fichier. La virtualisation d’un réseau de stockage (SAN) implique l’ajout d’une couche de traduction entre les hôtes et les baies de stockage. Dans ce type de virtualisation du stockage, les serveurs sont redirigés vers des LUN virtualisés plutôt que vers des LUN basés sur une baie de stockage donnée. Ces LUN virtualisés restent sur le dispositif virtualisé. La virtualisation d’un NAS consiste à supprimer les dépendances entre les données auxquelles on accède au niveau des fichiers et l’endroit où les fichiers sont physiquement stockés.
+Quels sont les différents types de virtualisation du stockage ?
+
+Il existe plusieurs façons d’appliquer le stockage à un environnement virtuel, selon que la virtualisation est basée sur l’hôte, sur les baies ou sur le réseau.
+Virtualisation basée sur l’hôte
+
+Utilisée le plus souvent dans les systèmes HCI et le stockage cloud, la virtualisation basée sur l’hôte utilise un logiciel pour diriger le trafic. Dans cette méthode, le stockage physique peut être attribué à pratiquement n’importe quel dispositif ou baie. L’hôte, ou un système hyperconvergé composé de plusieurs hôtes, présente des disques virtuels à des machines invitées possédant n’importe quel type de configuration, par exemple des machines virtuelles dans une entreprise, des ordinateurs accédant à des fichiers partagés ou des serveurs accédant à des données via le cloud.
+Virtualisation basée sur les baies
+
+Avec la virtualisation du stockage basée sur des baies physiques, les serveurs sont localisés physiquement, et la baie à laquelle un utilisateur accède n’est pas visible pour les serveurs ou pour les utilisateurs accédant au stockage. Dans ce cas, une baie de stockage sert de contrôleur de stockage principal, et utilise un logiciel de virtualisation pour regrouper les ressources de stockage d’autres baies. La baie peut également présenter différents types de stockage physique comme autant de niveaux, plutôt qu’une collection disparate de dispositifs. Ces niveaux peuvent être constitués de disques SSD ou HDD présents sur les différentes baies.
+
+ 
+
+ 
+Virtualisation basée sur le réseau
+
+La forme la plus courante de virtualisation du stockage est basée sur le réseau. Dans ce cas, tous les dispositifs de stockage sont reliés à un réseau de stockage FC (Fiber Channel) ou ISCSI (Internet Small Computing System Interface) par un dispositif réseau. Ces dispositifs interconnectés se présentent comme un pool virtuel unique au sein de leur réseau de stockage.
+Quelle est la différence entre la virtualisation des serveurs et la virtualisation du stockage ?
+
+Les entreprises ont le choix entre plusieurs technologies de virtualisation en fonction de leurs besoins. La plupart des entreprises intègrent désormais des postes de travail virtuels dans leur environnement de travail, car le télétravail semble désormais être là pour durer. La virtualisation des applications fait partie de cet environnement de télétravail, dans la mesure où un poste de travail a besoin de moins de ressources pour remplir sa fonction dès lors que les systèmes d’exploitation des applications ne résident pas physiquement sur celui-ci.
+
+Mais ce n’est pas tout. Un serveur virtualisé garantit une disponibilité plus élevée et une reprise après sinistre plus efficace à l’entreprise. En effet, le système d’exploitation est séparé du matériel, et les machines qui y accèdent peuvent être traitées comme un fichier. En tant que fichiers, ces serveurs peuvent être stockés sur le réseau de stockage, ce qui permet une mobilité accrue pour l’accès aux données. En cas de défaillance d’un serveur, l’activité peut être hébergée sur un autre serveur puisque tous les serveurs virtuels sont stockés sur le réseau SAN.
+
+La virtualisation des serveurs permet également d’adapter le matériel à la demande pour bénéficier d’un système plus élastique. Certains serveurs peuvent être arrêtés lorsque les charges de travail diminuent, puis remis en service dès que les charges de travail augmentent. En réduisant ainsi le nombre de serveurs simultanément actifs, une entreprise peut réduire ses coûts d’électricité et de refroidissement, de même que le nombre de machines physiques restant inutilisées la plupart du temps.
+
+La virtualisation du stockage permet également d’accroître la disponibilité, en particulier lorsqu’elle est utilisée en conjonction avec la virtualisation des serveurs. Le stockage est virtualisé, et n’est donc pas associé à un serveur particulier. Ainsi, le stockage peut être géré à partir de sources multiples et utilisé comme un référentiel unique. En outre, de nombreux serveurs peuvent accéder aux données stockées sur le SAN, ce qui simplifie grandement son utilisation.
+Quels sont les avantages de la virtualisation du stockage ?
+
+    Réduction des coûts – Comme le stockage virtuel n’a pas besoin des redondances matérielles propres aux architectures de stockage d’entreprise traditionnelles pour la reprise après sinistre, il y a moins d’appareils et de licences logicielles à acheter. L’entreprise peut ainsi réduire ses coûts en évitant de lourds engagements financiers initiaux.
+    Gain de temps – Le stockage virtualisé permet non seulement de réduire les temps d’arrêt (planifiés ou non), mais aussi d’effectuer les mises à niveau plus rapidement et avec beaucoup moins de perturbations.
+    Évolutivité – Avec le stockage virtuel, les entreprises n’ont plus besoin de prévoir leurs besoins de stockage à long terme ni de payer d’avance pour toute cette capacité. Au lieu de cela, les services informatiques peuvent tirer parti d’un provisionnement dynamique qui répond à des besoins changeants, à la demande.
+    Gestion simplifiée – Le stockage virtuel simplifie et améliore l’utilisation des ressources en offrant la possibilité d’ajouter ou de supprimer facilement des capacités de stockage sans interrompre les applications. De plus, il permet une migration transparente des données et fluidifie la mise en œuvre de fonctions avancées à l’échelle du pool de stockage.
+    Risques réduits – En cas de défaillance d’un disque, d’un contrôleur de stockage ou d’un bloc d’alimentation, chacun de ces éléments est déjà mis en miroir dans la baie virtuelle, ce qui réduit considérablement le risque d’interruption. Cette redondance virtuelle limite les ralentissements et augmente l’efficacité et la flexibilité du stockage.
+    Gains de productivité – Le stockage virtuel offre non seulement une disponibilité totale : il permet aussi d’accélérer les déploiements d’applications et de services afin d’accélérer le retour sur investissement.
+    Gains d’efficacité – Le principal avantage réside dans l’accélération du stockage et dans une meilleure utilisation de la capacité. L’accès aux données et le traitement des données sont également plus stables. En outre, le stockage virtuel garantit une utilisation à 100 % et un faible risque de manque de capacité.
+
 • Concept de la virtualisation du poste de travail
 • Concept de la virtualisation applicative
 • 1 TP sur l'installation et la configuration d'un environnement de virtualisation (Virtualbox, Esx, ...)
