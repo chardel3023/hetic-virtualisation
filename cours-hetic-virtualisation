@@ -212,5 +212,80 @@ Télémédecine : L’utilisation de solutions virtuelles permet d’étendre le
 
 Maintenance d’installations : Les postes de travail virtuels sont même adaptés à la réparation et à la maintenance des équipements sur site. Par exemple, lorsqu’un employé d’un site doit réparer ou entretenir un équipement qui ne lui est pas familier, il peut contacter un technicien plus compétent sur un lieu de travail distant. Il suffit à l’employé d’enfiler un casque et de se laisser guider dans l’opération comme si l’expert travaillait physiquement à ses côtés. L’intervenant distant peut voir ce que voit l’employé sur place et guider celui-ci de manière appropriée. Il peut également dessiner des cercles autour des objets présents dans le champ visuel, ou saisir du texte dans ce dernier pour aider le collaborateur sur place à se concentrer sur les pièces à manipuler. 
 
+
+Qu’est-ce que l’infrastructure de bureau virtuel (VDI) ?
+
+L’infrastructure de bureau virtuel (VDI) est un environnement de travail qui permet aux employés d’accéder aux applications et aux services de leur entreprise depuis n’importe où. Pour les départements informatiques, elle est devenue le moyen le plus économique de gérer la sécurité et l’infrastructure nécessaires au bon fonctionnement d’une entreprise.
+Un datacenter virtuel
+
+Dans cet environnement VDI, les responsables informatiques créent un datacenter virtuel et permettent aux utilisateurs d’accéder aux données, applications et postes de travail de l’entreprise en mode as-a-service via Internet. Tout le traitement est effectué sur un serveur hôte.
+Solutions, produits ou services HPE connexes
+
+HPE GreenLake pour la VDI
+
+Solutions VDI
+
+Solutions de stockage VDI pour la virtualisation client
+L’accès délocalisé
+
+Les utilisateurs finaux accèdent aux postes de travail virtuels depuis n’importe quel appareil et n’importe quel endroit, mais ils doivent rester connectés au serveur pour pouvoir continuer à travailler. Un « broker » régule ces connexions en agissant comme une passerelle entre les utilisateurs et les serveurs. Cet intermédiaire logiciel vérifie les identifiants et contrôle les accès.
+
+Étant donné que de multiples machines virtuelles peuvent être hébergées sur un même serveur, le nombre de postes de travail virtuels fonctionnant simultanément dans certains environnements VDI peut atteindre plusieurs dizaines de milliers.
+Rubriques connexes
+
+Virtualisation de serveurs 
+
+Poste de travail virtuel
+
+Virtualisation
+
+Machine virtuelle (VM)
+Comment fonctionne la VDI ?
+
+L’infrastructure de bureau virtuel fonctionne via des machines virtuelles (VM) qui sont contrôlées par un logiciel de gestion centralisé. Dans son principe, une VDI est une configuration de serveur à distance dans laquelle les serveurs sont segmentés en machines virtuelles. Un hyperviseur crée, exécute et gère plusieurs VM hôtes qui contiennent l’environnement de postes de travail virtuels. Ces VM hébergent un système d’exploitation de postes de travail virtuels, et chaque poste de travail virtuel contient une image du système d’exploitation.
+Quels sont les avantages de la VDI ?
+
+La VDI offre un certain nombre d’avantages par rapport à un lieu de travail unique.
+
+Le déploiement de la VDI implique que l’entreprise consolide ses ressources sur un serveur hôte. Au fur et à mesure que les utilisateurs sollicitent cette infrastructure, le réseau virtuel permet une utilisation plus efficace de ces ressources. Grâce à cette efficacité accrue, les services informatiques peuvent adapter les besoins en matériel et les achats.
+
+De plus, comme la VDI permet une gestion centralisée, les services informatiques peuvent appliquer des correctifs, des mises à jour et des modifications à l’ensemble des postes de travail virtuels en une seule et même opération. Cela réduit considérablement les efforts nécessaires et simplifie grandement la reprise après sinistre.
+
+L’un des autres avantages majeurs réside dans l’accessibilité inhérente à la VDI. Les utilisateurs peuvent se connecter au moyen de n’importe quel appareil depuis n’importe quel endroit, ce qui facilite réellement l’accès aux fichiers, applications et services de l’entreprise. Cela améliore la productivité et l’expérience utilisateur.
+
+Peut-être plus important encore, les applications et les appareils étant séparés, la VDI permet aux entreprises de verrouiller toutes les données et de maintenir une confidentialité totale. Si un appareil est compromis, le service informatique n’a qu’à le désactiver pour empêcher tout utilisateur non autorisé d’y accéder.
+
+En bref, la transition vers une solution VDI offre de nombreuses possibilités à l’entreprise :
+
+    Maîtriser les coûts
+    Maintenir la sécurité
+    Assurer une transition transparente entre les espaces de travail
+    Garantir une productivité constante
+    Optimiser l’utilisation des installations
+    Faire monter le matériel en puissance
+
+Comment réussir la mise en œuvre d’une solution VDI ?
+
+Lors de la mise en œuvre d’une solution VDI, il est utile de se concentrer sur le service fourni, et pas uniquement sur les postes de travail eux-mêmes. Afin de garantir une facilité d’utilisation optimale, les utilisateurs doivent savoir et comprendre ce que la VDI va leur apporter.
+
+Par conséquent, la meilleure pratique consiste à démarrer le projet en cherchant à comprendre les besoins des utilisateurs finaux. Certains utilisateurs ont-ils besoin d’applications à forte composante graphique ? Cela nécessitera une configuration particulière. De quel niveau d’efficacité les utilisateurs ont-ils besoin — par exemple, résultats instantanés ou retour d’informations plus mesuré ? Cela aura une incidence sur la puissance de calcul intégrée.
+
+Le réseau lui-même doit également être préparé. Cela signifie qu’il faut évaluer les volumes de trafic réseau en fonction des pics d’utilisation et de l’évolution de la demande, afin de pouvoir estimer la capacité avec plus de précision.
+
+Il est essentiel de s’assurer que chaque poste de travail est provisionné pour gérer le plus haut niveau de ressources qu’il a historiquement consommé. La performance énergétique totale pour le nombre total d’utilisateurs affecte également la capacité à prévoir dans la conception de la VDI.
+
+Enfin, l’exécution d’un pilote pour tester et retester la configuration permettra de s’assurer que la conception fonctionne parfaitement.
+Comment les différents secteurs d’activité déploient-ils les solutions VDI ?
+
+En mettant en œuvre des solutions VDI modernes, les entreprises peuvent réduire leurs coûts informatiques, simplifier la gestion des données et des services, et augmenter l’efficacité du stockage et des applications, tout en ajoutant un nombre important de postes de travail à distance. Presque tous les types d’entreprise peuvent bénéficier de l’installation de nouveaux systèmes VDI, mais voici quelques bons exemples :
+
+Santé : Avec l’évolution des pratiques de soin, le secteur de la santé voit augmenter les besoins en capacités multimédias pour la simulation et la téléconsultation en vidéo. Souvent, la solution VDI en place dans les hôpitaux offre des performances graphiques insuffisantes, tandis que les datacenters centralisés et complexes sont gravement compromis en cas d’utilisation intensive. Les solutions VDI actuelles fournissent des réseaux de postes de travail mobiles et efficaces qui allient les avantages d’une informatique centralisée aux performances d’un matériel dédié.
+
+Industrie / Commerce de détail : Les grands fabricants et détaillants mènent des activités sur plusieurs continents avec des milliers d’employés. Les anciennes solutions VDI se sont révélées instables du fait du manque de capacité des serveurs de fichiers, de la faiblesse des sauvegardes et d’une continuité d’activité insuffisante. Les nouvelles infrastructures VDI fonctionnent de manière beaucoup plus fiable et offrent des fonctions de sauvegarde et de restauration à haut débit, ainsi qu’un outil qui automatise les opérations de basculement/rétablissement en cas de sinistre.
+
+Services publics : Les compagnies d’énergie doivent constamment opérer à grande distance, ce qui peut entraîner des problèmes de connectivité, une latence des systèmes et une perte de productivité. Pour surmonter ces problèmes, les fournisseurs d’énergie peuvent réorganiser leurs écosystèmes informatiques avec des solutions VDI qui assurent une disponibilité des données et des applications 24h/24, 7j/7, une évolutivité transparente et une gestion centralisée.
+
+Éducation : Face à l’augmentation considérable de la demande d’enseignement à distance, beaucoup de grands systèmes scolaires ont eu du mal à prendre en charge simultanément un nombre suffisant de postes de travail d’étudiants. En mettant en œuvre une configuration VDI moderne, les établissements scolaires peuvent considérablement augmenter le stockage, la capacité des serveurs et la disponibilité des applications afin que les étudiants puissent utiliser les applications Web de CAO/FAO en technologie flash et les suites d’animation 3D nécessaires à un apprentissage à distance efficace.
+
 • Concept de la virtualisation applicative
 • 1 TP sur l'installation et la configuration d'un environnement de virtualisation (Virtualbox, Esx, ...)
